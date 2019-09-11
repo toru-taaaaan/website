@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="Ja">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>独学サイト</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <i id="open_menu" class="fas fa-bars"></i>
+          <nav id="menu">
+            <i id="close_menu" class="fas fa-times"></i>
+            <ul>
+              <li><a href="#">独学日記</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+          </nav>
+          <h1>独学でエンジニアになるサイト</h1>
+        </div>
+      </header>
+      <section class="features">
+        <div class="container">
+          <h1 class="section-title">こんな感じで学んでいます。</h1>
+          <section class="feature">
+            <img src="img/feature1.png">
+            <div class="text">
+              <h2 class="text-title">自己紹介</h2>
+              <p>47歳のおじさんです。一応、システム開発の現場で責任者をしています。だけどずっと自分の手でプログラミングができないことをコンプレックスに感じていました。独学の目標は、作りたいサービスを独学で勉強して自由自裁に形にできるようになること。将来はこのサイトで自分が立ち上げたサービスをたくさん紹介してゆきたいです。</p>
+            </div>
+          </section>
+          <section class="feature">
+            <img src="img/feature2.png">
+            <div class="text">
+                <h2 class="text-title">このサイトがポートフォリオです</h2>
+                <p>今まではWordPressでしかサイトを立ち上げたことがなかったのですが、勉強の成果を形にする為にこちらのサイトはCMSなどを使用せず一から立ち上げております。僕のスキルアップと共に少しずつアップデートして行く予定です。</p>
+              </div>
+          </section>
+          <section class="feature">
+            <img src="img/feature3.png">
+            <div class="text">
+                <h2 class="text-title">学んでいる言語と教材</h2>
+                <p>学んでいる言語は、HTML/CSS/JavaScript/SQLです。学んでいるツールは、dotinstallとprogateとschooに課金しています。</p>
+              </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h1 class="section-title">News</h1>
+          <div class="flex">
+            <article class="news-item">
+              <img src="img/news.png">
+              <p>hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. </p>
+            </article>
+            <article class="news-item">
+              <img src="img/news.png">
+              <p>hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. </p>
+            </article>
+            <article class="news-item">
+              <img src="img/news.png">
+              <p>hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. hello. </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="how-to-use">
+        <div class="container">
+          <h1 class="section-title">How to use</h1>
+          <div class="iframe-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QrbYdJDJEb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <footer>
+        &copy; taaaan.com
+      </footer>
+      <script>
+      (function() {
+        'use strict';
+        const openMenu = document.getElementById('open_menu');
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close_menu');
+
+        openMenu.addEventListener('click', function(){
+          menu.classList.add('shown');
+        });
+
+        closeMenu.addEventListener('click', function(){
+          menu.classList.remove('shown');
+        });
+      })();
+      </script>
+    </body>
+</html>
