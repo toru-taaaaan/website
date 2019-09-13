@@ -118,6 +118,10 @@ footer {
   color: #ccc;
 }
 
+.blog {
+  decoration: none;
+}
+
 /* medium screens */
 
 @media (min-width: 570px) {
