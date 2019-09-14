@@ -90,6 +90,14 @@ header h1 {
   margin-bottom: 60px;
 }
 
+.blog-feature img {
+  width: 100%;
+}
+
+.blog-feature:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 .news-item img {
   width: 100%;
 }
