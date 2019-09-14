@@ -120,6 +120,11 @@ footer {
 
 .blog {
   text-decoration: none;
+  color: #333;
+}
+
+.blog:hover {
+  opacity: 0.9;
 }
 
 /* medium screens */
