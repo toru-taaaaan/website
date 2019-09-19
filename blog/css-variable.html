@@ -16,7 +16,7 @@
       background: hsl(var(--my-hue), 60%, 95%);
     }
 
-    h1, p {
+    h1, h2, p {
       color: hsl(var(--my-hue), 30%, 55%);
     }
 
@@ -70,11 +70,10 @@
           <h1 class="section-title">CSSの変数を学んだのでボタン一つでテーマの色を変えてるページを作成したぞ。</h1>
           <section class="blog-feature">
             <div class="text">
-              <h2 class="text-title"></h2>
+              <h2 class="text-title">dotinstallでCSSの変数を学ぶ</h2>
               <p>
-                CSSの変数を学んだことでボタン一つでテーマの色合いを変化させることができるようになりました。
-              </p>
-              <p>↓のボタンを押下する度に、色調の整ったテーマカラーがランダムに切り替わります。</p>
+                CSSの変数を学んだことでボタン一つでテーマの色合いを変化させることができるようになりました。具体的にはbodyの背景色とh1,h2,p,footerの色がボタンを押下する度に切り替わります。(変化を見るためにメニューの文字はあえてそのままにしました。）<br>
+                ↓のボタンを押下する度に、色調の整ったテーマカラーがランダムに切り替わります。</p>
             </div>
             <div id="btn">Button</div>
             <p>
@@ -82,6 +81,10 @@
             </p>
             <p>
               Webサイトの色相を合わせる方法は今までhue360を使う方法しか知らなかったのですが、この方法を使えば色相に対する知識が無くても色相の合うサイトを作ることができそうです。
+            </p>
+            <h2 class="text-title">JavaScriptの理解はまだまだ</h2>
+            <p>
+              getElementById、addEventListener、Math.random()とかはそれぞれ個別で何をしているか理解しているけれど、ボタンを押す度に１〜３６０の数値を--my-hueに代入しろという命令を空で書くことはまだまだできそうにない。
             </p>
           </section>
         </div>
