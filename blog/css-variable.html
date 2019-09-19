@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>独学サイト</title> 
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root {
+      --my-hue: 100;
+    }
+    body {
+      background: hsl(var(--my-hue), 60%, 95%);
+    }
+
+    h1, p {
+      color: hsl(var(--my-hue), 30%, 55%);
+    }
+
+    footer {
+      color: hsl(calc(var(--my-hue) + 30), 30%, 55%);
+    }
+    /* :root {
+      --my-color: blue;
+    }
+    body {
+      --my-color: blue;
+    }
+    h1 {
+      --my-color: blue;
+      color: var(--my-color, orange);
+      border-bottom: 3px solid var(--my-color);
+    }
+
+    p {
+      color: var(--my-color, orange);
+    } */
+    #btn {
+      color: white;
+      background: hsl(calc(var(--my-hue) - 180), 50%, 50%);
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <i id="open_menu" class="fas fa-bars"></i>
+        <nav id="menu">
+          <i id="close_menu" class="fas fa-times"></i>
+          <ul>
+            <li><a href="#">独学日記</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </nav>
+        <a href="../index.html"><h1>独学でエンジニアになるサイト</h1></a>
+      </div>
+    </header>
+    <section class="features">
+        <div class="container">
+          <h1 class="section-title">CSSの変数を学んだのでボタン一つでテーマの色を変えてるページを作成したぞ。</h1>
+          <section class="blog-feature">
+            <div class="text">
+              <h2 class="text-title"></h2>
+              <p>
+                CSSの変数を学んだことでボタン一つでテーマの色合いを変化させることができるようになりました。
+              </p>
+              <p>↓のボタンを押下する度に、色調の整ったテーマカラーがランダムに切り替わります。</p>
+            </div>
+            <div id="btn">Button</div>
+            <p>
+              Button だけ強調されているのは、色相が反転するようにランダムに出てくる数値からcalcを使って−１８０させているからです。−１８０だと、どぎつく感じるようであれば、１８０を９０とかに変えるのもありとのことです。
+            </p>
+            <p>
+              Webサイトの色相を合わせる方法は今までhue360を使う方法しか知らなかったのですが、この方法を使えば色相に対する知識が無くても色相の合うサイトを作ることができそうです。
+            </p>
+          </section>
+        </div>
+      </section>
+    <footer>
+      &copy; taaaan.com
+    </footer>
+      <script src="/js/main.js"></script>
+      <script>
+        (() => {
+          'use strict'
+          document.getElementById('btn').addEventListener('click', () => {
+            document.documentElement.style.setProperty('--my-hue', Math.floor(Math.random() * 360));
+          });
+        })();
+      </script>
+</body>
+</html>
