@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calendar.css">
     <title>カレンダー</title>
 </head>
 <body>
@@ -25,10 +26,19 @@
         </thead>
         <tbody>
             <tr>
+                <td class="disabled">1</td>
+                <td class="disabled">1</td>
+                <td class="disabled">1</td>
+                <td class="disabled">1</td>
                 <td>1</td>
                 <td>1</td>
                 <td>1</td>
+            </tr>
+            <tr>
                 <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td class="today">1</td>
                 <td>1</td>
                 <td>1</td>
                 <td>1</td>
@@ -47,25 +57,17 @@
                 <td>1</td>
                 <td>1</td>
                 <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td class="disabled">1</td>
+                <td class="disabled">1</td>
+                <td class="disabled">1</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td ID="today" colspan="7">今日</td>
+                <td id="today" colspan="7">今日</td>
             </tr>
         </tfoot>
     </table>
+    <script src="js/calendar.js"></script>
 </body>
 </html>
